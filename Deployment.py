@@ -81,7 +81,7 @@ st.write(df_depl)
 #loaded_model = load(open('RF_Whole.sav', 'rb'))
 #loaded_model = load(open('RF_Whole_no_std.sav', 'rb'))
 #loaded_model = load(open('Logistic_Model.sav', 'rb'))
-loaded_model = load(open('RF_WholeData_encoded.sav', 'rb'))
+loaded_model = load(open('Model8_15.joblib', 'rb'))
 
 
 prediction = loaded_model.predict(df_depl)
