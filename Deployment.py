@@ -65,7 +65,8 @@ def user_input_features():
             #'TOTAL COST':tot_cost,
             #'TOTAL CHARGE':tot_charge,
             'RATIO':ratio,
-            'PAYMENT':payment_typology}
+            "PAYMENT":payment_typology
+            }
     
     features = pd.DataFrame(data,index = [0])
     return features 
@@ -81,7 +82,7 @@ st.write(df_depl)
 #loaded_model = load(open('RF_Whole.sav', 'rb'))
 #loaded_model = load(open('RF_Whole_no_std.sav', 'rb'))
 #loaded_model = load(open('Logistic_Model.sav', 'rb'))
-loaded_model = load(open('Model8_15.joblib', 'rb'))
+loaded_model = load(open('RF_WholeData_encoded.sav', 'rb'))
 
 
 prediction = loaded_model.predict(df_depl)
