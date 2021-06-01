@@ -175,7 +175,8 @@ col4.markdown("Total Cost - "+f"**{df_depl.iloc[0][11]:.2f}**")
 col3.markdown("Ratio - "+f"**{df_depl.iloc[0][12]:.2f}**")
 
 # load the model from disk
-loaded_model = load(open('Model_final.joblib', 'rb'))
+#loaded_model = load(open('Model_final.joblib', 'rb'))
+loaded_model = load(open('Model.joblib', 'rb'))
 
 
 prediction = loaded_model.predict(df_depl)
